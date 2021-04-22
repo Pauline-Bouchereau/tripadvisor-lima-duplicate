@@ -1,6 +1,10 @@
 /* ------------------ */
 /* GLOBAL RULES */
 /* ------------------ */
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --dark-grey: #333333;
   --light-grey: #e0e0e0f5;
@@ -14,13 +18,15 @@
 body {
   font-family: "Trip Sans Reg", Arial, Helvetica, sans-serif;
   font-size: 16px;
+  margin-top: 5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-  width: 1140px;
+  max-width: 1165px;
   margin: 0 auto;
+  padding: 0 25px;
 }
 
 /* Titles */
@@ -74,10 +80,6 @@ img {
   object-fit: cover;
 }
 
-img:hover {
-  opacity: 0.8;
-}
-
 /* Nav */
 nav {
   display: flex;
@@ -109,7 +111,7 @@ button:hover {
 /* ------------------ */
 header {
   height: 50px;
-  padding: 5px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,18 +120,24 @@ header {
 header > div {
   display: flex;
   align-items: center;
+  width: 50%;
+}
+
+header > i:first-child,
+header > i:last-child {
+  display: none;
 }
 
 /* Left side of the header */
 header img {
   width: 190px;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .search-field {
   border: solid 2px var(--light-grey);
   border-radius: 10px;
-  width: 346px;
+  width: 75%;
 }
 
 .search-field i {
@@ -160,6 +168,10 @@ header span {
 /* MAIN */
 /* ------------------ */
 
+main img:hover {
+  opacity: 0.8;
+}
+
 /* Menu */
 .menu div {
   border: solid 1px black;
@@ -172,6 +184,15 @@ header span {
 
 .menu div:not(:last-child) {
   margin-right: 15px;
+}
+
+.menu div:hover {
+  background-color: black;
+  color: white;
+}
+
+.menu div:nth-child(7) {
+  display: none;
 }
 
 .menu span {
@@ -295,7 +316,7 @@ header span {
 }
 
 .unmissable-category > div:first-child {
-  width: 230px !important;
+  width: 230px;
   margin-right: 75px;
 }
 
@@ -438,4 +459,116 @@ footer a {
 footer a:hover {
   font-weight: bold;
   color: var(--lighter-green);
+}
+
+/* ------------------ */
+/* ------------------ */
+/* MEDIA QUERIES */
+/* ------------------ */
+/* ------------------ */
+
+/* Width max 1 883px */
+@media (max-width: 1883px) {
+  /* ------------------ */
+  /* MAIN */
+  /* ------------------ */
+  /* Menu */
+  .menu {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: cornflowerblue;
+  }
+
+  .menu > div {
+    width: 25%;
+  }
+
+  .menu div:nth-child(7) {
+    display: block;
+  }
+}
+
+/* Width between 768px and 1 024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* ------------------ */
+  /* HEADER */
+  /* ------------------ */
+
+  header > div:first-child {
+    width: 60%;
+  }
+
+  /* Left side of the header */
+  header img {
+    width: 170px;
+    margin-right: 25px;
+  }
+
+  /* Right side of the header */
+  header nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav div:hover {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--grey-nav-hover);
+  }
+
+  header nav span {
+    display: none;
+  }
+}
+
+/* Width max 767px*/
+@media (max-width: 767px) {
+  /* ------------------ */
+  /* GLOBAL RULES */
+  /* ------------------ */
+
+  h1 {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  /* ------------------ */
+  /* HEADER */
+  /* ------------------ */
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav,
+  .search-field {
+    display: none;
+  }
+
+  .search-field {
+    border: none;
+    border-radius: none;
+    background-color: cornflowerblue;
+    width: 0;
+  }
+
+  header > div {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+  }
+
+  header > i:first-child,
+  header > i:last-child {
+    display: block;
+    font-size: 22px;
+  }
+
+  header img {
+    width: 130px;
+    margin: 0;
+  }
 }
