@@ -468,23 +468,33 @@ footer a:hover {
 /* ------------------ */
 
 /* Width max 1 883px */
-@media (max-width: 1883px) {
+@media (min-width: 768px) and (max-width: 1883px) {
   /* ------------------ */
   /* MAIN */
   /* ------------------ */
   /* Menu */
   .menu {
     flex-wrap: wrap;
-    justify-content: flex-start;
-    background-color: cornflowerblue;
+    width: 100%;
   }
 
   .menu > div {
-    width: 25%;
+    flex: none;
+    width: calc(25% - (45px / 4));
+    margin-bottom: 15px;
+  }
+
+  .menu div:nth-child(4) {
+    margin-right: 0;
   }
 
   .menu div:nth-child(7) {
     display: block;
+  }
+
+  .menu span {
+    max-width: 140px;
+    line-height: 20px;
   }
 }
 
@@ -570,5 +580,31 @@ footer a:hover {
   header img {
     width: 130px;
     margin: 0;
+  }
+
+  /* ------------------ */
+  /* MAIN */
+  /* ------------------ */
+
+  /* Menu */
+
+  .menu {
+    overflow: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu > div {
+    flex: none;
+    min-width: 150px;
+  }
+
+  .menu span {
+    max-width: none;
+    overflow: visible;
   }
 }
