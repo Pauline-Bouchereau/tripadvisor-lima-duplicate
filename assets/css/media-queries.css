@@ -1,0 +1,156 @@
+/* ------------------ */
+
+/* Width max 1 883px */
+
+/* ------------------ */
+
+@media (min-width: 768px) and (max-width: 1183px) {
+  /* ------------------ */
+  /* MAIN */
+  /* ------------------ */
+  /* Menu */
+  .menu {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .menu > div {
+    flex: none;
+    width: calc(25% - (45px / 4));
+    margin-bottom: 15px;
+  }
+
+  .menu div:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .menu div:nth-child(7) {
+    display: block;
+  }
+
+  .menu span {
+    max-width: 140px;
+    line-height: 20px;
+  }
+}
+
+/* ------------------ */
+
+/* Width between 768px and 1 024px */
+
+/* ------------------ */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* ------------------ */
+  /* HEADER */
+  /* ------------------ */
+
+  header > div:first-child {
+    width: 60%;
+  }
+
+  /* Left side of the header */
+  header img {
+    width: 170px;
+    margin-right: 25px;
+  }
+
+  /* Right side of the header */
+  header nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav div:hover {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--grey-nav-hover);
+  }
+
+  header nav span {
+    display: none;
+  }
+}
+
+/* ------------------ */
+
+/* Width max 767px*/
+
+/* ------------------ */
+
+@media (max-width: 767px) {
+  /* ------------------ */
+  /* GLOBAL RULES */
+  /* ------------------ */
+
+  h1 {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  /* ------------------ */
+  /* HEADER */
+  /* ------------------ */
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav,
+  .search-field {
+    display: none;
+  }
+
+  .search-field {
+    border: none;
+    border-radius: none;
+    background-color: cornflowerblue;
+    width: 0;
+  }
+
+  header > div {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+  }
+
+  header > i:first-child,
+  header > i:last-child {
+    display: block;
+    font-size: 22px;
+  }
+
+  header img {
+    width: 130px;
+    margin: 0;
+  }
+
+  /* ------------------ */
+  /* MAIN */
+  /* ------------------ */
+
+  /* Menu */
+
+  .menu {
+    overflow: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu > div {
+    flex: none;
+    min-width: 150px;
+  }
+
+  .menu span {
+    max-width: none;
+    overflow: visible;
+  }
+}

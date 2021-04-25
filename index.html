@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media-queries.css" />
 
     <!-- Icons with fontawesomes.com -->
     <script
@@ -27,7 +28,7 @@
   <!-- ------------------------------------------------------ -->
 
   <body>
-    <!-- ----------------------HEADER---------------------- -->
+    <!-- ----------------------HEADER------------------------ -->
     <header class="container">
       <i class="fas fa-bars"></i>
       <!-- Left side of the header -->
@@ -85,13 +86,16 @@
       </div>
 
       <nav class="nav-country">
-        <span>Amérique du Sud</span>
-        <span>&nbsp > &nbsp</span>
-        <span>Pérou</span>
-        <span>&nbsp > &nbsp</span>
-        <span>Région de Lima</span>
-        <span>&nbsp > &nbsp</span>
-        <span>Lima <i class="fas fa-sort-down"></i></span>
+        <div>
+          <a href="#">Amérique du Sud</a>
+          <a href="#">&nbsp > &nbsp</a>
+          <a href="#">Pérou</a>
+          <a href="#">&nbsp > &nbsp</a>
+          <a href="#">Région de Lima</a>
+          <a href="#">&nbsp > &nbsp</a>
+          <a href="#">Lima <i class="fas fa-sort-down"></i></a>
+        </div>
+        <span>Visiter Lima</span>
       </nav>
 
       <section class="about-city">
@@ -119,30 +123,31 @@
           </div>
           <img
             src="./assets/img/lima-map-tripadvisor.png"
-            alt="Carte de Lima Tripadvisor"
+            alt="Carte Tripadvisor"
           />
         </div>
       </section>
 
-      <section class="unmissable">
+      <section class="must-see">
         <h2>Lima : les immanquables</h2>
-        <div class="unmissable-category">
+        <div class="category">
           <div>
             <h4>Se divertir</h4>
             <p>
               Des lieux à voir, des rues à explorer et des expériences
               emblématiques.
             </p>
-            <button>Tout afficher</button>
+            <a href="#">Tout afficher</a>
           </div>
-          <!-- Carousel "Se divertir" -->
-          <div class="carousel">
-            <div class="carousel-element">
-              <div class="picture-carousel">
+          <!-- Carrousel "Se divertir" -->
+          <div class="carrousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
                 <img src="./assets/img/museo-larco.jpg" alt="Le musée Larco" />
                 <div class="heart"><i class="far fa-heart"></i></div>
                 <div class="green-picto">
                   <img src="./assets/img/logo-picto-tripadvisor.svg" alt="" />
+                  <span>2020</span>
                 </div>
               </div>
               <h5>Musée Larco</h5>
@@ -154,15 +159,18 @@
               </div>
             </div>
 
-            <div class="carousel-element">
-              <div class="picture-carousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
                 <img
                   src="./assets/img/miraflores.jpg"
                   alt="Le quartier de Miraflores"
                 />
                 <div class="heart"><i class="far fa-heart"></i></div>
                 <div class="green-picto">
-                  <img src="./assets/img/logo-picto-tripadvisor.svg" alt="" />
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
                 </div>
               </div>
               <h5>Miraflores</h5>
@@ -174,15 +182,18 @@
               </div>
             </div>
 
-            <div class="carousel-element">
-              <div class="picture-carousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
                 <img
                   src="./assets/img/circuito-magico-del-agua.jpg"
                   alt="Le Circuito Magico del Agua"
                 />
                 <div class="heart"><i class="far fa-heart"></i></div>
                 <div class="green-picto">
-                  <img src="./assets/img/logo-picto-tripadvisor.svg" alt="" />
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
                 </div>
               </div>
               <h5>Circuito Magico del Agua</h5>
@@ -194,15 +205,18 @@
               </div>
             </div>
 
-            <div class="carousel-element">
-              <div class="picture-carousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
                 <img
                   src="./assets/img/barranco.jpg"
                   alt="Le quartier de Barranco"
                 />
                 <div class="heart"><i class="far fa-heart"></i></div>
                 <div class="green-picto">
-                  <img src="./assets/img/logo-picto-tripadvisor.svg" alt="" />
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
                 </div>
               </div>
               <h5>Barranco</h5>
@@ -214,15 +228,18 @@
               </div>
             </div>
 
-            <div class="carousel-element">
-              <div class="picture-carousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
                 <img
                   src="./assets/img/huca-pucllana.jpg"
                   alt="Huaca Pucllana"
                 />
                 <div class="heart"><i class="far fa-heart"></i></div>
                 <div class="green-picto">
-                  <img src="./assets/img/logo-picto-tripadvisor.svg" alt="" />
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
                 </div>
               </div>
               <h5>Huaca Pucllana</h5>
@@ -234,15 +251,18 @@
               </div>
             </div>
 
-            <div class="carousel-element">
-              <div class="picture-carousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
                 <img
                   src="./assets/img/plaza-de-armas.jpg"
                   alt="La place des Armes de Lima"
                 />
                 <div class="heart"><i class="far fa-heart"></i></div>
                 <div class="green-picto">
-                  <img src="./assets/img/logo-picto-tripadvisor.svg" alt="" />
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
                 </div>
               </div>
               <h5>Plaza de Armas (Plaza Mayor)</h5>
@@ -254,15 +274,18 @@
               </div>
             </div>
 
-            <div class="carousel-element">
-              <div class="picture-carousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
                 <img
                   src="./assets/img/miraflores-boardwalk.jpg"
                   alt="Miraflores Boardwalk"
                 />
                 <div class="heart"><i class="far fa-heart"></i></div>
                 <div class="green-picto">
-                  <img src="./assets/img/logo-picto-tripadvisor.svg" alt="" />
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
                 </div>
               </div>
               <h5>Miraflores Boardwalk</h5>
@@ -274,12 +297,15 @@
               </div>
             </div>
 
-            <div class="carousel-element">
-              <div class="picture-carousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
                 <img src="./assets/img/pachacamac.jpg" alt="Pachacamac" />
                 <div class="heart"><i class="far fa-heart"></i></div>
                 <div class="green-picto">
-                  <img src="./assets/img/logo-picto-tripadvisor.svg" alt="" />
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
                 </div>
               </div>
               <h5>Pachacamac</h5>
@@ -291,15 +317,18 @@
               </div>
             </div>
 
-            <div class="carousel-element">
-              <div class="picture-carousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
                 <img
                   src="./assets/img/centro-historico.jpg"
                   alt="Centre historique de Lima"
                 />
                 <div class="heart"><i class="far fa-heart"></i></div>
                 <div class="green-picto">
-                  <img src="./assets/img/logo-picto-tripadvisor.svg" alt="" />
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
                 </div>
               </div>
               <h5>Pachacamac</h5>
@@ -311,23 +340,1455 @@
               </div>
             </div>
 
-            <div class="carousel-element">
-              <div class="picture-carousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
                 <img
                   src="./assets/img/museo-san-francisco.jpg"
                   alt="Musée San Francisco et catacombes"
                 />
                 <div class="heart"><i class="far fa-heart"></i></div>
                 <div class="green-picto">
-                  <img src="./assets/img/logo-picto-tripadvisor.svg" alt="" />
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
                 </div>
               </div>
-              <h5>Pachacamac</h5>
+              <h5>Museo Convento San Francisco y Catacumbas</h5>
               <div class="notation">
                 <i class="fas fa-circle"></i><i class="fas fa-circle"></i
                 ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
                 ><i class="far fa-circle"></i><span>6 335</span>
                 <p>Musées d'histoires, Eglises et cathédrales</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="category">
+          <div>
+            <h4>Se reposer</h4>
+            <p>Un mélange de charme, de modernité et de valeurs sûres.</p>
+            <a href="#">Tout afficher</a>
+          </div>
+          <!-- Carrousel "Se reposer" -->
+          <div class="carrousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/radisson-red-miraflores.jpg"
+                  alt="Hôtel Radisson Miraflores"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Radisson Red Miraflores</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>194</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/hyatt-san-isidro.jpg"
+                  alt="Hôtel Hyatt San Isidro"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Hyatt Centric San Isidro Lima</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>695</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/belmond-miraflores-park.jpg"
+                  alt="Hôtel Belmond"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Miraflores Park, A Belmond Hotel, Lima</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>2 080</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/dazzler-san-isidro.jpg"
+                  alt="Hôtel Dazzler San Isidro"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Dazzler by Wyndham Lima San Isidro</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>111</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/hilton-lima.jpg"
+                  alt="Hôtel Hilton Lima"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Dazzler by Wyndham Lima San Isidro</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>3 039</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/casa-republica.jpg"
+                  alt="Hôtel Casa Republica"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Casa Republica Barrance</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>171</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/villa-barranco.jpg"
+                  alt="Hôtel Villa Barranco"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Villa Barranco by Ananay Hotels</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>206</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/marriott-lima.jpg"
+                  alt="Hôtel Marriott Lima"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>JW Marriott Hotel Lima</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>4125</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/hotel-b.jpg" alt="Hôtel B" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Hotel B</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>657</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/hotel-vila-santa-miraflores.jpg"
+                  alt="Hôtel Vila Santa"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Hotel Vila Santa</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 155</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="category">
+          <div>
+            <h4>Se restaurer</h4>
+            <p>Lieux incontournables où manger, boire et faire la fête.</p>
+            <a href="#">Tout afficher</a>
+          </div>
+          <!-- Carrousel "Se restaurer" -->
+          <div class="carrousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/saha-kitchen-cocktails.jpg"
+                  alt="Restaurant Saha Kitchen & Cocktails"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Saha Kitchen & Cocktails</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>236</span>
+                <p>€€-€€€ • Péruvienne, Latino, Fruits de mer & Poisson</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/embarquadero-41.jpg"
+                  alt="Plat Arroz Cremoso"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Embarcadero 41</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>1 042</span>
+                <p>€€-€€€ • Péruvienne, Latino, Fruits de mer & Poisson</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/poke-51.jpg" alt="Tartare de poisson" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Poke 51</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>153</span>
+                <p>€€-€€€ • Péruvienne, Japonaise, Sushi</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/osaka-pardo.jpg"
+                  alt="Restaurant Osaka Pardo"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Osaka Pardo y Aliaga</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>864</span>
+                <p>€€€€ • Japonaise, Péruvienne, Fruits de mar & Poisson</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/locanda.jpg"
+                  alt="Dessert glace et fruits"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>La Locanda</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 015</span>
+                <p>
+                  €€€€ • Européenne, Végétaries bienvenus, Choix végétaliens
+                </p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/la-plaza-bar-grill.jpg"
+                  alt="Assiettes burger et frites"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>La Plaza Bar & Grill</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>351</span>
+                <p>€€-€€€ • Péruvienne, Latino, Bar</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/mar-y-selva.jpg" alt="Plat de Poulet" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Mar y Selva Cocina Amazónica Fusión</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>351</span>
+                <p>€€-€€€ • Péruvienne, Fusion, Sud-américaine</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/nanka.jpg" alt="Restaurant Nanka" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Nanka</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 635</span>
+                <p>€€€€ • Péruvienne, Latino, Saine</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/satera.jpg"
+                  alt="Plat restaurant Statera"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Restaurant Statera</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>130</span>
+                <p>€€€€ • Péruvienne, Moderne, Plats sans gluten</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/museo-larco-cafe-restaurant.jpg"
+                  alt="Restaurant du Musée Larco"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Museo Larco Cafe Restaurant</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>2 199</span>
+                <p>
+                  €€-€€€ • Péruvienne, Végétariens bienvenus, Choix végétaliens
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="accommodation">
+        <h2>Louez un logement pour votre prochaine escapade</h2>
+        <div>
+          <h4>Locations populaires à Lima</h4>
+          <a href="#">Tout afficher</a>
+        </div>
+        <div class="carrousel">
+          <div class="carrousel-element">
+            <div class="picture-carrousel">
+              <img
+                src="./assets/img/ocean-side-miraflores.jpg"
+                alt="Ocean-Side rental"
+              />
+              <div class="heart"><i class="far fa-heart"></i></div>
+            </div>
+            <h5>Ocean-Side Rental in Miraflores, Lima, Peru</h5>
+            <div class="notation">
+              <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><span>21</span>
+            </div>
+            <span>5 couchages • 3 chambres • 3 salles de bain</span>
+          </div>
+
+          <div class="carrousel-element">
+            <div class="picture-carrousel">
+              <img
+                src="./assets/img/miraflores-app.jpg"
+                alt="Miraflores Appartment"
+              />
+              <div class="heart"><i class="far fa-heart"></i></div>
+            </div>
+            <h5>Miraflores Apartment - Lima, Peru</h5>
+            <div class="notation">
+              <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><span>13</span>
+            </div>
+            <span>3 couchages • 1 chambre • 1 salle de bain</span>
+            <p>à partir de 60€/nuit</p>
+          </div>
+
+          <div class="carrousel-element">
+            <div class="picture-carrousel">
+              <img src="./assets/img/loft-barranco.jpg" alt="Loft Barranco" />
+              <div class="heart"><i class="far fa-heart"></i></div>
+            </div>
+            <h5>
+              Loft vista al mar y terraza en la Condesa de Barranco, restored
+              1900s mansion.
+            </h5>
+            <div class="notation">
+              <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><span>16</span>
+            </div>
+            <span>3 couchages • 1 chambre • 1 salle de bain</span>
+            <p>à partir de 49€/nuit</p>
+          </div>
+
+          <div class="carrousel-element">
+            <div class="picture-carrousel">
+              <img
+                src="./assets/img/app-miraflores.jpg"
+                alt="Appartement à Miraflores"
+              />
+              <div class="heart"><i class="far fa-heart"></i></div>
+            </div>
+            <h5>The Best Located Apartment in Miraflores</h5>
+            <div class="notation">
+              <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="far fa-circle"></i><span>40</span>
+            </div>
+            <span>5 couchages • 3 chambres • 3 salles de bain</span>
+            <p>à partir de 52€/nuit</p>
+          </div>
+
+          <div class="carrousel-element">
+            <div class="picture-carrousel">
+              <img
+                src="./assets/img/app-san-miguel.jpg"
+                alt="Appartement à San Miguel"
+              />
+              <div class="heart"><i class="far fa-heart"></i></div>
+            </div>
+            <h5>Apartamentos en San Miguel Frente al Mar</h5>
+            <div class="notation">
+              <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><span>7</span>
+            </div>
+            <span>10 couchages • 3 chambres • 2 salles de bain</span>
+            <p>à partir de 42€/nuit</p>
+          </div>
+
+          <div class="carrousel-element">
+            <div class="picture-carrousel">
+              <img
+                src="./assets/img/modern-app-miraflores.jpg"
+                alt="Appartement à Miraflores"
+              />
+              <div class="heart"><i class="far fa-heart"></i></div>
+            </div>
+            <h5>Modern 4 Bedroom Apartment Miraflores, Lima, Peru</h5>
+            <div class="notation">
+              <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><span>20</span>
+            </div>
+            <span>7 couchages • 4 chambres • 4 salles de bain</span>
+            <p>à partir de 106€/nuit</p>
+          </div>
+
+          <div class="carrousel-element">
+            <div class="picture-carrousel">
+              <img
+                src="./assets/img/condo-larcomar.jpg"
+                alt="Appartement Larcomar"
+              />
+              <div class="heart"><i class="far fa-heart"></i></div>
+            </div>
+            <h5>Ocean View Condo a Block from Larcomar</h5>
+            <div class="notation">
+              <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="far fa-circle"></i><span>24</span>
+            </div>
+            <span>6 couchages • 3 chambres • 3 salles de bain</span>
+            <p>à partir de 86€/nuit</p>
+          </div>
+
+          <div class="carrousel-element">
+            <div class="picture-carrousel">
+              <img src="./assets/img/penthouse.jpg" alt="Penthouse" />
+              <div class="heart"><i class="far fa-heart"></i></div>
+            </div>
+            <h5>Penthouse Rooftop Private Terrace bi-level condo</h5>
+            <div class="notation">
+              <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><span>7</span>
+            </div>
+            <span>6 couchages • 4 chambres • 3 salles de bain</span>
+            <p>à partir de 81€/nuit</p>
+          </div>
+
+          <div class="carrousel-element">
+            <div class="picture-carrousel">
+              <img
+                src="./assets/img/app2-miraflores.jpg"
+                alt="Immeuble à Miraflores"
+              />
+              <div class="heart"><i class="far fa-heart"></i></div>
+            </div>
+            <h5>Miraflores Apartment for Rent Lima</h5>
+            <div class="notation">
+              <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+              ><i class="fas fa-circle"></i><span>25</span>
+            </div>
+            <span>6 couchages • 3 chambres • 2 salles de bain</span>
+            <p>à partir de 79€/nuit</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="choices">
+        <h2>Plus de choix à Lima</h2>
+        <div>
+          <div>
+            <h4>Restaurants bon marché</h4>
+            <a href="#">Tout afficher</a>
+          </div>
+          <div class="carrousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/nuevo-mundo.jpg"
+                  alt="Deux personnes trinquant avec des bières"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Nuevo Mundo Bar Miraflores</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>138</span>
+                <p>€ • Péruvienne, Bar, Pub</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/bao.jpg" alt="Bao au poulet" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Bao!</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>356</span>
+                <p>€ • Repas sur le pouce, Restauration rapide, Asiatique</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/blu-il-gelato-del-barrio.jpg"
+                  alt="Glace au chocolat"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>BLU : il gelato del barrio</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>876</span>
+                <p>€ • Desserts, Végétariens bienvenus, Plats sans gluten</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/al-toke.jpg"
+                  alt="Plat de poisson frit"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Al Toke Pez</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>212</span>
+                <p>€ • Péruvienne, Latino, Fruits de mer & Poisson</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/juanito-de-barranco.jpg"
+                  alt="Plat de ceviche de poisson"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Juanito de Barranco</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>200</span>
+                <p>€ • Péruvienne, Bar</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/burrito-bar-lima.jpg"
+                  alt="Logo Burrito Bar Barranco"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Burrito Bar - Lima</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>390</span>
+                <p>€ • Restauration rapide, Mexicaie, Internationale</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/puku-puku.jpg" alt="Alfajor et café" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Puku Puku Cafe</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>426</span>
+                <p>€ • Péruvienne, Café, Végétariens bienvenus</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/bao-2.jpg" alt="Plat" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Bao?</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>244</span>
+                <p>€ • Repas sur le pouce, Restauration rapide, Asiatique</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/sangucheria-la-lucha.jpg"
+                  alt="Club sandwich"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>La Lucha Sangucheria Criolla</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>2 386</span>
+                <p>€ • Repas sur le pouce, Péruvienne, Restauration rapide</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/la-lucha.jpg"
+                  alt="Restaurant La Lucha"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>La Lucha Sangucheria Criolla</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>2 807 </span>
+                <p>€ • Repas sur le pouce, Péruvienne, Restauration rapide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h4>Meilleurs notes des voyageurs</h4>
+          </div>
+          <div class="carrousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/la-hacienda-hotel-and.jpg"
+                  alt="Chambre de l'hôtel La Hacienda"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>La Hacienda Miraflores</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>453</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/marriott-lima.jpg"
+                  alt="Hôtel Marriott"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>JW Marriott Hotel Lima</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>4 125</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/by-hitlon.jpg"
+                  alt="Hôtel El Pardo Double Tree"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>El Pardo Double Tree by Hilton Hotel</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 692</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/swiss-hotel.jpg"
+                  alt="Piscine du Swissotel"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Swissotel Lima</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 639</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/el-olivar.jpg" alt="Hôtel El Olivar" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Sonesta Hotel El Olivar</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 049</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/sheraton.jpg" alt="Hôtel Sheraton" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Sheraton Lima Hotel & Convention Center</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 497</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/delifines.jpg" alt="Hôtel Delfines" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Delfines Hotel & Convention Center</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 838</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/antigua-miraflores-hotel.jpg"
+                  alt="Chambre de l'hôtel Antigua"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Antigua Miraflores Hotel</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 263</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/casa-andina.jpg"
+                  alt="Hôtal Casa Andina"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Casa Andina Standar Miraflores San Antonio</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>475</span>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/country-club.jpg"
+                  alt="Country Club Hotel"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Country Club Lima Hotel</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 471</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h4>Bars et clubs</h4>
+            <a href="#">Tout afficher</a>
+          </div>
+          <div class="carrousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/del-carajo-cumplio-18.jpg"
+                  alt="Logo bar Del Carajo"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Del Carajo!</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>122</span>
+                <p>Bars et clubs, Discothèques</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/the-madbar-experience.jpg"
+                  alt="Bar Madbar"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Madbar</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>55</span>
+                <p>Bars et clubs</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/crocodrilo.jpg" alt="Tapas" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Crocodrilo Verde</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>61</span>
+                <p>Bars et clubs</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/lobby-bar-at-swissotel.jpg"
+                  alt="Lobby Bar Swissotel"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Lobby Bar Swissotel Lima</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>33</span>
+                <p>Bars et clubs</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/sukhabar.jpg"
+                  alt="Le Sukha Buda Lounge"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Sukha Buda Lounge</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>15</span>
+                <p>Bars et clubs</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/the-pisco-crawl.jpg"
+                  alt="Concert au Pisco Crawl"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>The Pisco Crawl</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>40</span>
+                <p>Bars et clubs</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/oficina.jpg" alt="Pisco Sour" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>La Oficina</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>15</span>
+                <p>Bars et clubs</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/winebar.jpg" alt="Verres de vin" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>La Esquina Wine Bar</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>24</span>
+                <p>Bars et clubs</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/una-noche-en-valetodo.jpg"
+                  alt="Le Bar Vale Todo"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Vale Todo DownTown</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>38</span>
+                <p>Bars et clubs</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/mama-batata.jpg"
+                  alt="Le Bar Mama Batata"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+              <h5>Mama Batata</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>23</span>
+                <p>Bars et clubs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h4>Cuisine rafinée</h4>
+            <a href="#">Tout afficher</a>
+          </div>
+          <div class="carrousel">
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/locanda.jpg"
+                  alt="Dessert glace et fruits"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>La Locanda</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 015</span>
+                <p>
+                  €€€€ • Européenne, Végétariens bienvenus, Choix végétaliens
+                </p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/nanka.jpg" alt="Le restaurant Nanka" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Nanka</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>1 635</span>
+                <p>€€€€ • Péruvienne, Latino, Saine</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/satera.jpg"
+                  alt="Plat du restaurant Statera"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Nanka</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>130</span>
+                <p>€€€€ • Péruvienne, Moderne, Plats sans gluten</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/maido.jpg"
+                  alt="Plat du restaurant Maido"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Maido</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><span>3 899</span>
+                <p>€€€€ • Japonaise, Péruvienne, Fruits de mer & Poisson</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/bienvenidos-a-social.jpg"
+                  alt="Restaurant SOCIAL."
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>SOCIAL.</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>879</span>
+                <p>€€€€ • Péruvienne, Moderne, Végétariens bienvenus</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/maras.jpg"
+                  alt="Plat du restaurant Maras"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Maras Restaurante</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>664</span>
+                <p>€€€€ • Péruvienne, Latino, Internationale</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img src="./assets/img/osaka.jpg" alt="Restaurant Osaka" />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>Osaka</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>252</span>
+                <p>€€€€ • Japonaise, Péruvienne, Fruits de mer & Poisson</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/charrua.jpg"
+                  alt="Restaurant El Charrua"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>El Charrua</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>252</span>
+                <p>€€€€ • Argentine, Steakhouse, Latino</p>
+              </div>
+            </div>
+
+            <div class="carrousel-element">
+              <div class="picture-carrousel">
+                <img
+                  src="./assets/img/la-fondue-restaurant.jpg"
+                  alt="Restaurant La Fondue"
+                />
+                <div class="heart"><i class="far fa-heart"></i></div>
+                <div class="green-picto">
+                  <img
+                    src="./assets/img/logo-picto-tripadvisor.svg"
+                    alt=""
+                  /><span>2020</span>
+                </div>
+              </div>
+              <h5>La Fondue</h5>
+              <div class="notation">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="far fa-circle"></i><span>298</span>
+                <p>€€€€ • Suisse, Européenne, Europe centrale</p>
               </div>
             </div>
           </div>

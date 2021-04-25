@@ -13,6 +13,7 @@
   --green-trip: #09a96c;
   --lighter-green: #34e0a1;
   --footer-color: #f9f1ec;
+  --golden-picto: #f1b202;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
 }
 
 .container {
-  max-width: 1165px;
+  max-width: 1190px;
   margin: 0 auto;
   padding: 0 25px;
 }
@@ -52,7 +53,7 @@ h1 span {
 h2 {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 h3 {
@@ -73,6 +74,14 @@ h5 {
 
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 24px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
 }
 
 /* Images */
@@ -104,6 +113,111 @@ button {
 
 button:hover {
   background-color: var(--dark-grey);
+}
+
+/* Sections */
+section {
+  margin: 75px 0;
+}
+
+/* Carrousels */
+.carrousel {
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+.picture-carrousel {
+  position: relative;
+}
+
+.carrousel-element {
+  flex-shrink: 0;
+}
+
+.carrousel-element:hover h5 {
+  text-decoration: underline;
+  color: var(--dark-grey);
+}
+
+.carrousel-element:hover .picture-carrousel > img {
+  opacity: 0.8;
+}
+
+.carrousel .heart {
+  border-radius: 50%;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+}
+
+.must-see .carrousel .green-picto,
+.green-picto {
+  background-color: var(--lighter-green);
+  height: 42px;
+  width: 31px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.must-see .carrousel .green-picto img,
+.green-picto img {
+  width: 28px;
+  height: 28px;
+}
+
+.must-see .carrousel .green-picto span,
+.green-picto span {
+  font-family: "Trip Sans Med", Arial, Helvetica, sans-serif;
+  padding-right: 4px;
+}
+
+.carrousel .notation i {
+  margin-right: 2px;
+  color: var(--green-trip);
+}
+
+.carrousel i,
+.carrousel span {
+  font-size: 12px;
+}
+
+.carrousel span {
+  margin-left: 5px;
+  color: var(--dark-grey);
+}
+
+.carrousel p {
+  color: var(--dark-grey);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.carrousel .heart i {
+  font-size: 22px;
 }
 
 /* ------------------ */
@@ -176,6 +290,7 @@ main img:hover {
 .menu div {
   border: solid 1px black;
   border-radius: 10px;
+  line-height: 20px;
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -206,7 +321,7 @@ main img:hover {
 .city-pic {
   display: flex;
   height: 430px;
-  margin: 60px 0 25px 0;
+  margin: 25px 0 25px 0;
 }
 
 .city-pic .main-city-pic {
@@ -249,14 +364,29 @@ main img:hover {
 }
 
 /* Nav country */
-.nav-country span {
+.nav-country {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-country a {
   font-size: 12px;
   font-family: inherit;
   color: var(--dark-grey);
 }
 
+.nav-country a:hover {
+  text-decoration: underline;
+}
+
 .nav-country i {
   margin-left: 5px;
+}
+
+.nav-country span {
+  font-size: 12px;
+  color: var(--dark-grey);
+  font-family: inherit;
 }
 
 /* About City */
@@ -279,8 +409,18 @@ main img:hover {
 }
 
 /* Orga city */
-.about-city .orga-city {
-  width: 465px;
+.about-city {
+  display: flex;
+}
+
+.infos-city {
+  width: 50%;
+  height: 100%;
+}
+
+.orga-city {
+  width: calc(50% - 105px);
+  height: 100%;
 }
 
 .about-city .orga-city > div {
@@ -288,10 +428,13 @@ main img:hover {
   padding: 40px 35px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  height: 275px;
 }
 
 .about-city .orga-city p {
   margin: 25px 0;
+  font-family: "Trip Sans Reg", Arial, Helvetica, sans-serif;
+  line-height: 20px;
 }
 
 .about-city .orga-city button {
@@ -306,121 +449,121 @@ main img:hover {
   display: block;
 }
 
-/* Unmissable */
-.unmissable {
-  margin-top: 75px;
+.about-city .orga-city img:hover {
+  opacity: 1;
 }
 
-.unmissable-category {
+/* Must See */
+.category {
   display: flex;
+  margin-bottom: 110px;
 }
 
-.unmissable-category > div:first-child {
-  width: 230px;
-  margin-right: 75px;
+.category > div:first-child {
+  width: 25%;
+  margin-right: 20px;
 }
 
-.unmissable-category > div:first-child p {
+.category > div:first-child p {
   font-size: 18px;
   margin-bottom: 20px;
   line-height: 22px;
 }
 
-.unmissable-category > div:first-child button {
+.category > div:first-child a {
   background-color: #fff;
   padding: 0;
   font-size: 14px;
   color: black;
+  font-family: "Trip Sans Med", Arial, Helvetica, sans-serif;
 }
 
-.unmissable-category > div:first-child button:hover {
+.category > div:first-child a:hover {
   text-decoration: underline;
   color: var(--dark-grey);
 }
 
-/* Carousel */
+/* Carrousel */
 
-.carousel {
-  display: flex;
-  overflow: hidden;
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.carousel::-webkit-scrollbar {
-  display: none;
+.must-see .carrousel {
+  width: 75%;
 }
 
-.carousel-element:not(:last-child) {
-  margin-right: 15px;
+.must-see .carrousel-element {
+  width: calc(100% / 3 - (40px / 3));
 }
 
-.carousel i,
-.carousel span {
-  font-size: 12px;
+.must-see .carrousel-element:not(:last-child) {
+  margin-right: 20px;
 }
 
-.carousel .notation i {
-  margin-right: 2px;
-  color: var(--green-trip);
-}
-
-.carousel span {
-  margin-left: 5px;
-  color: var(--dark-grey);
-}
-
-.carousel p {
-  color: var(--dark-grey);
-  font-size: 14px;
-  margin-top: 8px;
-}
-
-.picture-carousel {
-  position: relative;
-}
-
-.carousel img {
+.must-see .carrousel img {
   width: 270px;
   height: 205px;
 }
 
-.carousel .heart {
-  border-radius: 50%;
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: flex;
+/* Accommodation & Choices sections*/
+
+.accommodation .carrousel,
+.choices .carrousel {
+  width: 100%;
 }
 
-.carousel .green-picto {
-  background-color: var(--lighter-green);
-  height: 42px;
-  width: 32px;
-  border-top-left-radius: 40%;
-  border-top-right-radius: 40%;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+.accommodation .carrousel-element,
+.choices div:nth-child(3) .carrousel-element {
+  width: calc(100% / 3 - 10px);
+}
+
+.choices .carrousel-element {
+  width: calc(100% / 4 - (45px / 4));
+}
+
+.accommodation .carrousel-element:not(:last-child),
+.choices .carrousel-element:not(:last-child) {
+  margin-right: 15px;
+}
+
+.accommodation img,
+.choices img {
+  width: 100%;
+  height: 275px;
+}
+
+.accommodation .carrousel-element > i,
+.choices .carrousel-element > i {
+  color: var(--dark-grey);
+  font-size: 3px;
+}
+
+.accommodation .carrousel-element > p,
+.choices .carrousel-element > p {
+  font-family: "Trip Sans Med", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.choices > div {
+  margin-bottom: 90px;
+}
+
+.choices > div > div:first-child,
+.accommodation > div:nth-child(2) {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.carousel .green-picto img {
-  width: 28px;
-  height: 28px;
+.choices a,
+.accommodation a {
+  background-color: #fff;
+  padding: 0;
+  font-size: 14px;
+  color: black;
+  font-family: "Trip Sans Med", Arial, Helvetica, sans-serif;
 }
 
-.carousel .heart i {
-  font-size: 22px;
+.choices a:hover,
+.accommodation a:hover {
+  text-decoration: underline;
+  color: var(--dark-grey);
 }
 
 /* ------------------ */
@@ -430,13 +573,15 @@ main img:hover {
 footer {
   margin-top: 85px;
   background-color: var(--footer-color);
-  height: 155px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer div {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 
 footer img {
@@ -450,161 +595,7 @@ footer p {
   font-family: inherit;
 }
 
-footer a {
-  text-decoration: none;
-  cursor: pointer;
-  color: inherit;
-}
-
 footer a:hover {
   font-weight: bold;
   color: var(--lighter-green);
-}
-
-/* ------------------ */
-/* ------------------ */
-/* MEDIA QUERIES */
-/* ------------------ */
-/* ------------------ */
-
-/* Width max 1 883px */
-@media (min-width: 768px) and (max-width: 1883px) {
-  /* ------------------ */
-  /* MAIN */
-  /* ------------------ */
-  /* Menu */
-  .menu {
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .menu > div {
-    flex: none;
-    width: calc(25% - (45px / 4));
-    margin-bottom: 15px;
-  }
-
-  .menu div:nth-child(4) {
-    margin-right: 0;
-  }
-
-  .menu div:nth-child(7) {
-    display: block;
-  }
-
-  .menu span {
-    max-width: 140px;
-    line-height: 20px;
-  }
-}
-
-/* Width between 768px and 1 024px */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* ------------------ */
-  /* HEADER */
-  /* ------------------ */
-
-  header > div:first-child {
-    width: 60%;
-  }
-
-  /* Left side of the header */
-  header img {
-    width: 170px;
-    margin-right: 25px;
-  }
-
-  /* Right side of the header */
-  header nav div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  header nav div:hover {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: var(--grey-nav-hover);
-  }
-
-  header nav span {
-    display: none;
-  }
-}
-
-/* Width max 767px*/
-@media (max-width: 767px) {
-  /* ------------------ */
-  /* GLOBAL RULES */
-  /* ------------------ */
-
-  h1 {
-    font-size: 32px;
-    margin-top: 30px;
-    margin-bottom: 12px;
-  }
-
-  /* ------------------ */
-  /* HEADER */
-  /* ------------------ */
-  header {
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  header nav,
-  .search-field {
-    display: none;
-  }
-
-  .search-field {
-    border: none;
-    border-radius: none;
-    background-color: cornflowerblue;
-    width: 0;
-  }
-
-  header > div {
-    display: flex;
-    justify-content: space-between;
-    width: 130px;
-  }
-
-  header > i:first-child,
-  header > i:last-child {
-    display: block;
-    font-size: 22px;
-  }
-
-  header img {
-    width: 130px;
-    margin: 0;
-  }
-
-  /* ------------------ */
-  /* MAIN */
-  /* ------------------ */
-
-  /* Menu */
-
-  .menu {
-    overflow: hidden;
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .menu::-webkit-scrollbar {
-    display: none;
-  }
-
-  .menu > div {
-    flex: none;
-    min-width: 150px;
-  }
-
-  .menu span {
-    max-width: none;
-    overflow: visible;
-  }
 }
