@@ -1,6 +1,6 @@
 /* ------------------ */
 
-/* Width max 1 883px */
+/* Width max 1 183px */
 
 /* ------------------ */
 
@@ -31,6 +31,15 @@
   .menu span {
     max-width: 140px;
     line-height: 20px;
+  }
+
+  /* City pictures */
+  .city-pic {
+    height: 375px;
+  }
+
+  .city-pic .small-city-pic {
+    width: 400px;
   }
 }
 
@@ -71,6 +80,71 @@
 
   header nav span {
     display: none;
+  }
+
+  /* City pictures */
+  .city-pic {
+    height: 275px;
+  }
+
+  .city-pic .small-city-pic {
+    width: 310px;
+  }
+
+  /* About City */
+  .about-city {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-city .infos-city {
+    flex: none;
+    width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .orga-city {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 295px;
+  }
+
+  .about-city .orga-city > div {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+    padding-bottom: 30px;
+    width: 50%;
+  }
+
+  .about-city .orga-city img {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    width: 50%;
+    height: 100%;
+  }
+
+  .must-see .carrousel-element,
+  .accommodation .carrousel-element,
+  .choices div:nth-child(3) .carrousel-element {
+    width: calc(100% / 2.5 - (16px / 2.5));
+  }
+
+  .must-see .carrousel-element:not(:last-child),
+  .accommodation .carrousel-element:not(:last-child),
+  .choices .carrousel-element:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .accommodation img,
+  .choices img {
+    width: 100%;
+    height: 225px;
+  }
+
+  .choices .carrousel-element {
+    width: calc(100% / 3 - (16px / 3));
   }
 }
 
@@ -152,5 +226,111 @@
   .menu span {
     max-width: none;
     overflow: visible;
+  }
+
+  /* City pictures */
+  .city-pic {
+    height: 275px;
+    margin: 25px -25px;
+  }
+
+  .city-pic .small-city-pic {
+    display: none;
+  }
+
+  /* Nav country */
+  .nav-country {
+    display: none;
+  }
+
+  /* City infos */
+
+  .about-city {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-city .infos-city {
+    flex: none;
+    width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .orga-city {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .orga-city > div {
+    height: 230px;
+  }
+
+  /* Carrousel */
+  .category {
+    display: block;
+  }
+
+  .category > div:first-child {
+    flex: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .must-see .carrousel {
+    width: 100%;
+  }
+
+  .must-see .carrousel-element,
+  .accommodation .carrousel-element,
+  .choices div:nth-child(3) .carrousel-element {
+    width: calc(100% / 2.5 - (16px / 2.5));
+  }
+
+  .must-see .carrousel-element:not(:last-child),
+  .accommodation .carrousel-element:not(:last-child),
+  .choices .carrousel-element:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .accommodation img,
+  .choices img {
+    width: 100%;
+    height: 190px;
+  }
+
+  .choices .carrousel-element {
+    width: calc(100% / 2.5 - (16px / 2.5));
+  }
+}
+
+/* ------------------ */
+
+/* Width max 678px*/
+
+/* ------------------ */
+
+@media (max-width: 678px) {
+  /* ------------------ */
+  /* MAIN */
+  /* ------------------ */
+
+  /* Carrousel */
+
+  .must-see .carrousel-element,
+  .accommodation .carrousel-element,
+  .choices div:nth-child(3) .carrousel-element,
+  .choices .carrousel-element {
+    width: calc(100% / 1.2 - (40px / 1.2));
+  }
+
+  .accommodation img,
+  .choices img {
+    width: 100%;
+    height: 380px;
+  }
+
+  .category {
+    margin-bottom: 100px;
   }
 }

@@ -58,6 +58,7 @@ h2 {
 
 h3 {
   font-size: 32px;
+  line-height: 40px;
 }
 
 h4 {
@@ -498,8 +499,7 @@ main img:hover {
 }
 
 .must-see .carrousel img {
-  width: 270px;
-  height: 205px;
+  width: 100%;
 }
 
 /* Accommodation & Choices sections*/
