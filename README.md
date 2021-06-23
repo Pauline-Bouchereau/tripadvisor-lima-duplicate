@@ -6,6 +6,8 @@
 
 👉 Netlify Link to see the live version [HERE](https://tripadvisor-lima-pb.netlify.app/)  
 
+![Screenshot of the website](./assets/img/tripadvisor.png)
+
 _Made in 2021 @ Le Reacteur_
 
 ### ⚙️ Main functionalities :
